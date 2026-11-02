@@ -1,0 +1,235 @@
+{
+  "unique_people_count": 0,
+  "unique_obstacle_count": 19,
+  "people": [],
+  "obstacles": [
+    {
+      "id": 1,
+      "obj_type": "potted plant",
+      "x": 1.009739871325932,
+      "y": -0.004964150814243896,
+      "first_seen_frame": 69,
+      "last_seen_frame": 347,
+      "sightings": 24,
+      "extra": {
+        "track_id": 14
+      }
+    },
+    {
+      "id": 2,
+      "obj_type": "potted plant",
+      "x": -0.05030991122899766,
+      "y": 0.1084699046610672,
+      "first_seen_frame": 113,
+      "last_seen_frame": 386,
+      "sightings": 47,
+      "extra": {
+        "track_id": 14
+      }
+    },
+    {
+      "id": 3,
+      "obj_type": "chair",
+      "x": -1.1459296951610716,
+      "y": -0.07739179278499392,
+      "first_seen_frame": 156,
+      "last_seen_frame": 191,
+      "sightings": 3,
+      "extra": {
+        "track_id": 19
+      }
+    },
+    {
+      "id": 4,
+      "obj_type": "potted plant",
+      "x": -1.1776339008065189,
+      "y": -0.031042424506090894,
+      "first_seen_frame": 174,
+      "last_seen_frame": 437,
+      "sightings": 50,
+      "extra": {
+        "track_id": 14
+      }
+    },
+    {
+      "id": 5,
+      "obj_type": "potted plant",
+      "x": -1.046043576486286,
+      "y": -0.945245179274156,
+      "first_seen_frame": 197,
+      "last_seen_frame": 208,
+      "sightings": 11,
+      "extra": {
+        "track_id": 37
+      }
+    },
+    {
+      "id": 6,
+      "obj_type": "potted plant",
+      "x": -0.0016218639282084063,
+      "y": -0.9585207668471869,
+      "first_seen_frame": 225,
+      "last_seen_frame": 258,
+      "sightings": 31,
+      "extra": {
+        "track_id": 37
+      }
+    },
+    {
+      "id": 7,
+      "obj_type": "suitcase",
+      "x": -1.0373585151784146,
+      "y": -0.9521329553657066,
+      "first_seen_frame": 246,
+      "last_seen_frame": 247,
+      "sightings": 2,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 8,
+      "obj_type": "potted plant",
+      "x": 1.0595576896653545,
+      "y": -1.0007439541561007,
+      "first_seen_frame": 259,
+      "last_seen_frame": 275,
+      "sightings": 11,
+      "extra": {
+        "track_id": 37
+      }
+    },
+    {
+      "id": 9,
+      "obj_type": "suitcase",
+      "x": -0.06527133301649735,
+      "y": -1.0459056331200147,
+      "first_seen_frame": 264,
+      "last_seen_frame": 286,
+      "sightings": 11,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 10,
+      "obj_type": "suitcase",
+      "x": 1.014734133091517,
+      "y": -1.0924540997283156,
+      "first_seen_frame": 297,
+      "last_seen_frame": 298,
+      "sightings": 2,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 11,
+      "obj_type": "bench",
+      "x": -0.002626356148559798,
+      "y": -0.9685879128776258,
+      "first_seen_frame": 310,
+      "last_seen_frame": 361,
+      "sightings": 32,
+      "extra": {
+        "track_id": 46
+      }
+    },
+    {
+      "id": 12,
+      "obj_type": "bench",
+      "x": 1.0448363082393,
+      "y": -1.030001062227282,
+      "first_seen_frame": 376,
+      "last_seen_frame": 388,
+      "sightings": 8,
+      "extra": {
+        "track_id": 46
+      }
+    },
+    {
+      "id": 13,
+      "obj_type": "suitcase",
+      "x": 1.02860512705471,
+      "y": -0.0771104739643869,
+      "first_seen_frame": 381,
+      "last_seen_frame": 383,
+      "sightings": 3,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 14,
+      "obj_type": "backpack",
+      "x": -0.06058899744055494,
+      "y": 0.05256823114095052,
+      "first_seen_frame": 396,
+      "last_seen_frame": 427,
+      "sightings": 6,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 15,
+      "obj_type": "suitcase",
+      "x": -0.04658473220082617,
+      "y": 0.09084990728214164,
+      "first_seen_frame": 409,
+      "last_seen_frame": 425,
+      "sightings": 6,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 16,
+      "obj_type": "chair",
+      "x": -0.006843667437237869,
+      "y": -0.9761871323370103,
+      "first_seen_frame": 417,
+      "last_seen_frame": 467,
+      "sightings": 54,
+      "extra": {
+        "track_id": 77
+      }
+    },
+    {
+      "id": 17,
+      "obj_type": "suitcase",
+      "x": -1.1391405644254684,
+      "y": -0.09180344109423612,
+      "first_seen_frame": 436,
+      "last_seen_frame": 455,
+      "sightings": 8,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 18,
+      "obj_type": "backpack",
+      "x": -1.099314614175195,
+      "y": -0.15693569658697354,
+      "first_seen_frame": 440,
+      "last_seen_frame": 440,
+      "sightings": 1,
+      "extra": {
+        "track_id": 44
+      }
+    },
+    {
+      "id": 19,
+      "obj_type": "chair",
+      "x": 1.0339681864678678,
+      "y": -1.0191461805094695,
+      "first_seen_frame": 446,
+      "last_seen_frame": 467,
+      "sightings": 20,
+      "extra": {
+        "track_id": 101
+      }
+    }
+  ]
+}

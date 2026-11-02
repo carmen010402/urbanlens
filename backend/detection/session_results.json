@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-09-24T11:30:58.052874",
+  "unique_people_count": 3,
+  "obstacles": [
+    {
+      "track_id": 1,
+      "type": "chair",
+      "position_in_frame": "center",
+      "first_seen": "2026-09-24T11:30:43.913406"
+    },
+    {
+      "track_id": 2,
+      "type": "bench",
+      "position_in_frame": "center",
+      "first_seen": "2026-09-24T11:30:44.279375"
+    },
+    {
+      "track_id": 3,
+      "type": "chair",
+      "position_in_frame": "left",
+      "first_seen": "2026-09-24T11:30:47.772103"
+    },
+    {
+      "track_id": 7,
+      "type": "chair",
+      "position_in_frame": "left",
+      "first_seen": "2026-09-24T11:30:48.878461"
+    },
+    {
+      "track_id": 14,
+      "type": "chair",
+      "position_in_frame": "left",
+      "first_seen": "2026-09-24T11:30:52.787365"
+    },
+    {
+      "track_id": 16,
+      "type": "bench",
+      "position_in_frame": "center",
+      "first_seen": "2026-09-24T11:30:53.299954"
+    },
+    {
+      "track_id": 18,
+      "type": "bench",
+      "position_in_frame": "center",
+      "first_seen": "2026-09-24T11:30:54.906820"
+    }
+  ]
+}

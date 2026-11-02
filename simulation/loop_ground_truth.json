@@ -1,0 +1,79 @@
+{
+  "description": "Manually verified layout of the simulated UrbanLens rectangular loop",
+  "lane_width_m": 0.75,
+  "island_half_extent_m": [
+    1.5,
+    1.0
+  ],
+  "outer_half_extent_m": [
+    2.25,
+    1.75
+  ],
+  "robot_spawn": {
+    "x": 0.0,
+    "y": -1.375,
+    "facing": "+x (along the bottom wall)"
+  },
+  "segments": {
+    "S1": {
+      "wall": "top",
+      "doorway_center": [
+        -0.99,
+        1.75
+      ],
+      "doorway_width_m": 0.6,
+      "room_width_m": 1.0,
+      "room_depth_m": 1.0,
+      "is_reference": true,
+      "object": null
+    },
+    "S2": {
+      "wall": "right",
+      "doorway_center": [
+        2.25,
+        0.0
+      ],
+      "doorway_width_m": 0.6,
+      "room_width_m": 1.0,
+      "room_depth_m": 1.2,
+      "is_reference": false,
+      "object": "table_chair"
+    },
+    "S3": {
+      "wall": "bottom",
+      "doorway_center": [
+        0.0,
+        -1.75
+      ],
+      "doorway_width_m": 0.6,
+      "room_width_m": 0.7,
+      "room_depth_m": 0.7,
+      "is_reference": false,
+      "object": "trash_bag"
+    },
+    "S4": {
+      "wall": "left",
+      "doorway_center": [
+        -2.25,
+        0.0
+      ],
+      "doorway_width_m": 0.6,
+      "room_width_m": 1.4,
+      "room_depth_m": 1.1,
+      "is_reference": false,
+      "object": "bed"
+    },
+    "S5": {
+      "wall": "top",
+      "doorway_center": [
+        1.26,
+        1.75
+      ],
+      "doorway_width_m": 0.6,
+      "room_width_m": 0.9,
+      "room_depth_m": 0.9,
+      "is_reference": false,
+      "object": "trolley"
+    }
+  }
+}

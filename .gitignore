@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pt
+*.db
+*.mp4
+*.zip
+backend/Data*/
+backend/runs/
+backend/weights/
+backend/combined_dataset/
+backend/TACO/
+backend/fallen_trees_dataset/
+.env
+*.key
+*:Zone.Identifier

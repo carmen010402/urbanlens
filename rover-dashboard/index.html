@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Urban Ground-Truth Audit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header">
+    <h1>URBAN GROUND-TRUTH AUDIT</h1>
+    <div id="status-row">
+      <span>Mission: <strong id="mission-status">Running</strong></span>
+      <span>Coverage: <strong id="coverage">72%</strong></span>
+      <span>Distance: <strong id="distance">18.4m</strong></span>
+      <span>Robot: <strong id="robot-status">ONLINE</strong></span>
+    </div>
+      <div id="live-section">
+        <div id="camera-box">
+      <h2>CAMERA LIVE</h2>
+      <div id="camera-feed">
+        <img id="webcam" src="http://localhost:8000/video_feed">
+      </div>
+      <div id="camera-controls">
+        <button id="cam-start-btn">Start Camera</button>
+        <button id="cam-stop-btn">Stop Camera</button>
+      </div>
+    </div>
+
+    <div id="map-box">
+      <h2>LIVE MAP</h2>
+      <div id="map-canvas">
+        <p>map goes here</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="current-segment">
+    <h2>CURRENT SEGMENT: <span id="current-seg-label">S4</span></h2>
+    <p>Reference: <strong id="ref-value">1.50 m</strong></p>
+    <p>Actual: <strong id="actual-value">0.85 m</strong></p>
+    <p>Clearance: <strong id="clearance-value">-0.65 m</strong></p>
+    <p>Severity: <strong id="severity-value">4/5</strong></p>
+    <p>Finding: <strong id="finding-value">Chair / Obstruction</strong></p>
+  </div>
+  </div>
+  <div id="findings-section">
+    <h2>FINDINGS</h2>
+
+    <div class="finding-card">
+      <h3>SEGMENT 1</h3>
+      <p>People: 4</p>
+      <p>Obstacles: 0</p>
+      <p>Clearance: 1.5 m</p>
+      <p class="status-normal">Status: Normal</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>SEG 2</h3>
+      <p>People: 2</p>
+      <p>Obstacles: 1</p>
+      <p>Object: Chair</p>
+      <p>Clearance: 1.0 m</p>
+      <p class="status-warning">Severity: 3/5</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>SEG 3</h3>
+      <p>People: 2</p>
+      <p>Obstacles: 1</p>
+      <p>Object: Box</p>
+      <p>Clearance: 0.7 m</p>
+      <p class="status-danger">Severity: 4/5</p>
+    </div>
+
+  </div>
+  <div id="coverage-section">
+    <h2>COVERAGE</h2>
+    <ul id="segment-list">
+      <li class="surveyed">S1 <span class="dot">✔</span> surveyed</li>
+      <li class="surveyed">S2 <span class="dot">✔</span> surveyed</li>
+      <li class="finding">S3 <span class="dot">⚠</span> finding detected</li>
+      <li class="not-surveyed">S4 <span class="dot">○</span> not yet surveyed</li>
+      <li class="not-surveyed">S5 <span class="dot">○</span> not yet surveyed</li>
+    </ul>
+
+    <div id="button-row">
+      <button id="start-btn">Start</button>
+      <button id="stop-btn">Stop</button>
+      <button id="report-btn">Generate Report</button>
+    </div>
+  </div>
+    <script>
+  
+
+  // --- NEW: pull live detection results from the backend ---
+  async function fetchResults() {
+    try {
+      const res = await fetch("http://localhost:8000/api/results");
+      const data = await res.json();
+
+      if (data.error) {
+        console.log("No results yet:", data.error);
+        return;
+      }
+
+      document.getElementById("mission-status").textContent =
+        data.unique_people_count > 0 ? "Running" : "Idle";
+
+      const obstacleCount = data.obstacles.length;
+      document.getElementById("current-seg-label").textContent =
+        `People: ${data.unique_people_count} | Obstacles: ${obstacleCount}`;
+
+      if (obstacleCount > 0) {
+        const latest = data.obstacles[data.obstacles.length - 1];
+        document.getElementById("finding-value").textContent =
+          `${latest.type} (${latest.position_in_frame})`;
+      }
+    } catch (err) {
+      console.error("Could not fetch results:", err);
+    }
+  }
+
+  fetchResults();
+  setInterval(fetchResults, 3000); // refresh every 3 seconds
+</script>
+</body>
+</html>

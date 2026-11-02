@@ -1,0 +1,50 @@
+{
+  "description": "Manually verified layout of the simulated UrbanLens test corridor",
+  "corridor": {
+    "width_m": 1.5,
+    "length_m": 10.0,
+    "segment_length_m": 2.0,
+    "robot_spawn": {
+      "x": 0.0,
+      "y": 0.0,
+      "facing": "+x"
+    }
+  },
+  "segments": {
+    "S1": {
+      "x_start": 0.0,
+      "x_end": 2.0,
+      "reference_clearance_m": 1.5,
+      "true_clearance_m": 1.5,
+      "staged_obstacle": null
+    },
+    "S2": {
+      "x_start": 2.0,
+      "x_end": 4.0,
+      "reference_clearance_m": 1.5,
+      "true_clearance_m": 1.2,
+      "staged_obstacle": "box_S2: 0.3 m wide x 1.0 m long, on the left wall, x = 2.7 to 3.7 m"
+    },
+    "S3": {
+      "x_start": 4.0,
+      "x_end": 6.0,
+      "reference_clearance_m": 1.5,
+      "true_clearance_m": 1.5,
+      "staged_obstacle": null
+    },
+    "S4": {
+      "x_start": 6.0,
+      "x_end": 8.0,
+      "reference_clearance_m": 1.5,
+      "true_clearance_m": 0.85,
+      "staged_obstacle": "box_S4: 0.65 m wide x 1.0 m long, on the right wall, x = 6.7 to 7.7 m"
+    },
+    "S5": {
+      "x_start": 8.0,
+      "x_end": 10.0,
+      "reference_clearance_m": 1.5,
+      "true_clearance_m": 0.65,
+      "staged_obstacle": "box_S5: 0.85 m wide x 1.0 m long, on the left wall, x = 8.5 to 9.5 m"
+    }
+  }
+}
